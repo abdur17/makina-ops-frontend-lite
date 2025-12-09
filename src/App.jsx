@@ -10,6 +10,8 @@ import { UsersRolesPage } from "./pages/admin/UsersRolesPage";
 // src/App.jsx
 import { CustomerAccountsPage } from "./pages/customers/CustomerAccountsPage";
 import { CustomerUsersPage } from "./pages/customers/CustomerUsersPage";
+import { CustomerOrdersPage } from "./pages/customers/CustomerOrdersPage";
+import { OperationsSitesPage } from "./pages/operations/OperationsSitesPage";
 
 
 
@@ -48,6 +50,9 @@ export default function App() {
             path="voyages/:slug"
             element={<PlaceholderPage title="Orders & Voyages Module" />}
           />
+
+             {/* Operations modules */}
+             <Route path="operations/sites" element={<OperationsSitesPage />} />
           <Route
             path="operations/:slug"
             element={<PlaceholderPage title="Operations Module" />}
@@ -64,9 +69,8 @@ export default function App() {
           {/* Customers */}
           <Route path="customers/accounts" element={<CustomerAccountsPage />} />
           <Route path="customers/users" element={<CustomerUsersPage />} />
-          <Route
-            path="customers/:slug"
-            element={<PlaceholderPage title="Customers Module" />}
+          <Route path="customers/orders" element={<CustomerOrdersPage />}/>
+          <Route path="customers/:slug" element={<PlaceholderPage title="Customers Module" />}
           />
           
           <Route
