@@ -10,6 +10,7 @@ import { UsersRolesPage } from "./pages/admin/UsersRolesPage";
 // src/App.jsx
 import { CustomerAccountsPage } from "./pages/customers/CustomerAccountsPage";
 import { CustomerUsersPage } from "./pages/customers/CustomerUsersPage";
+import { OperationsSitesPage } from "./pages/operations/OperationsSitesPage";
 
 
 
@@ -48,6 +49,8 @@ export default function App() {
             path="voyages/:slug"
             element={<PlaceholderPage title="Orders & Voyages Module" />}
           />
+
+           <Route path="operations/sites" element={<OperationsSitesPage />} />
           <Route
             path="operations/:slug"
             element={<PlaceholderPage title="Operations Module" />}
