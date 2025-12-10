@@ -10,7 +10,10 @@ import { UsersRolesPage } from "./pages/admin/UsersRolesPage";
 // src/App.jsx
 import { CustomerAccountsPage } from "./pages/customers/CustomerAccountsPage";
 import { CustomerUsersPage } from "./pages/customers/CustomerUsersPage";
+<<<<<<< HEAD
 import { CustomerOrdersPage } from "./pages/customers/CustomerOrdersPage";
+=======
+>>>>>>> 3077f3583e3ff4bbd45ddbb3071ccfc1583a6974
 import { OperationsSitesPage } from "./pages/operations/OperationsSitesPage";
 
 
@@ -50,9 +53,8 @@ export default function App() {
             path="voyages/:slug"
             element={<PlaceholderPage title="Orders & Voyages Module" />}
           />
-
              {/* Operations modules */}
-             <Route path="operations/sites" element={<OperationsSitesPage />} />
+          <Route path="operations/sites" element={<OperationsSitesPage />} />
           <Route
             path="operations/:slug"
             element={<PlaceholderPage title="Operations Module" />}
